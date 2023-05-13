@@ -1,0 +1,178 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #5372f0;
+  color: #fff;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5372f0;
+}
+
+.wrapper {
+  width: 380px;
+  background: #fff;
+  padding: 30px 40px 50px 30px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.wrapper form {
+  margin: 40px 0;
+}
+
+.wrapper form .field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.wrapper form .field.shake {
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    margin-left: 0px;
+  }
+
+  20%,
+  80% {
+    margin-left: -12px;
+  }
+
+  40%,
+  60% {
+    margin-left: 12px;
+  }
+}
+
+.wrapper form .field .input-box {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper form .field .input-box input {
+  height: 100%;
+  width: 100%;
+  padding: 0 45px;
+  font-size: 18px;
+  outline: none;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  caret-color: #5372f0;
+  border-bottom-width: 2px;
+}
+
+.wrapper form .field.error .input-box input,
+.wrapper form .field.shake .input-box input {
+  border-color: #dc3545 !important;
+}
+
+.wrapper form .field .input-box input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+}
+
+.wrapper form .field.valid .input-box input,
+.wrapper form .field .input-box input:focus {
+  border-color: #5372f0;
+}
+
+.wrapper form .field .input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.wrapper form .field .input-box .icon {
+  left: 15px;
+  color: #bfbfbf;
+  transition: 0.3s ease;
+}
+
+.wrapper form .field.error .input-box input:focus ~ .icon {
+  color: #bfbfbf;
+}
+
+.wrapper form .field.valid .icon,
+.wrapper form .field .input-box input:focus ~ .icon {
+  color: #5372f0;
+}
+
+.wrapper form .field .input-box .error-icon {
+  right: 15px;
+  color: #dc3545;
+}
+
+.wrapper form .field .error-text {
+  text-align: left;
+  margin-top: 5px;
+  color: #dc3545;
+}
+
+.wrapper form .field .alert {
+  display: none;
+}
+
+.wrapper form .field.error .alert,
+.wrapper form .field.shake .alert {
+  display: block;
+}
+
+.wrapper form .pass-text {
+  text-align: left;
+  margin-top: -10px;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: #5372f0;
+}
+
+.wrapper a:hover {
+  text-decoration: underline;
+}
+
+.wrapper form .btn {
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: #5372f0;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.wrapper form .btn:hover {
+  background: #2c52ed;
+}

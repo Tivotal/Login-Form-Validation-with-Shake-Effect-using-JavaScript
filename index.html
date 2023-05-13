@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation | Tivotal</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>Login Form</header>
+
+      <form action="https://www.github.com/Tivotal">
+        <div class="field email">
+          <div class="input-box">
+            <input type="text" placeholder="Email Address" />
+            <i class="icon fas fa-envelope"></i>
+            <i class="alert error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="alert error-text">Email can't be empty</div>
+        </div>
+
+        <div class="field password">
+          <div class="input-box">
+            <input type="password" placeholder="Password" />
+            <i class="icon fas fa-lock"></i>
+            <i class="alert error-icon fas fa-exclamation-circle"></i>
+          </div>
+          <div class="alert error-text">Password can't be empty</div>
+        </div>
+
+        <div class="pass-text"><a href="#">Forgot Password?</a></div>
+        <input type="submit" value="Login" class="btn" />
+      </form>
+
+      <div class="signup-text">New here? <a href="#">Signup now</a></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
